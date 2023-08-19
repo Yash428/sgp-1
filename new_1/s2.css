@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    height: 690px;
+}
+html, body {
+    
+    width: 100%;
+    overflow-x: hidden;
+    margin:0; /*Add this*/
+    position: sticky;
+}
+.heading{
+    background-color: rgb(108, 108, 108);
+    margin: 0%;
+    padding: 10px;
+}
+main{
+    height: 612px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.login_form{
+    border: black solid 2px;
+    width:350px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.login_form1{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+}
+.s_button{
+    width:220px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+footer{
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.copyw{
+    padding: 10px;
+}
