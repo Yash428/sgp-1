@@ -14,13 +14,16 @@
     </header>
 
     <main>
+        <img src="stimg.jpg" alt="image" class="img1">
         <div class="login_form">
-            <h3>Login</h3>
-                <form>
+            <h3>Login</h3><br>
+                <form id="form1">
                     <input type="text" class="login_form1" id="userId" placeholder="Add Id" required><br>
                     <input type="password" class="login_form1" id="password" placeholder="Add password" required><br>
                     <button type="submit" class="s_button">submit</button>
+                    <!-- <input name="submit" type="submit" value="Submit" class="s_button"> -->
                 </form>
+                
         </div>
     </main>
 
@@ -28,4 +31,45 @@
         <div class="copyw">This website is developed by Yash084 & Yash085</div>
     </footer>
 </body>
+<script>
+    const form = document.querySelector('form')
+    console.log(document.getElementById("userId").value)
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        let t1 = document.getElementById("userId").value;
+        let p1 = document.getElementById("password").value;
+        //const faction = document.getElementById("form1");
+        if(t1.charAt(0)=="p")
+        {
+            window.location="parent.html";
+        }
+        else if(t1.charAt(0)=="s")
+        {
+            window.location="student.html";
+        }
+        else if(t1.charAt(0)=="t")
+        {
+            window.location="teacher.html";
+        }
+    })
+    // let t1 = document.getElementById("userId").value;
+    // let p1 = document.getElementById("password").value;
+    // let faction = document.getElementById("form1");
+    // if(t1.charAt(0)=='p')
+    // {
+    //     document.getElementById("form1").action="pa1.html";
+    // }
+    // else if(t1.charAt(0)=='t')
+    // {
+    //     faction.setAttribute("action","s1.html")
+    // }
+    // else if(t1.charAt(0)=='s')
+    // {
+    //     faction.setAttribute("action","st1.html")
+    // }
+    // else
+    // {
+    //     alert("error");
+    // }
+</script>
 </html>

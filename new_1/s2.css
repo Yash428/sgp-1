@@ -21,16 +21,22 @@ main{
     height: 612px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    /* justify-content: flex-end; */
+    
 }
 .login_form{
     border: black solid 2px;
     width:350px;
-    height: 300px;
+    height: 320px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: rgba(52, 52, 52, 0.501) 10px 10px 10px 10px;
+    /* margin-left: 400px; */
+    position: absolute;
+    right: 300px;
+    background-color: white;
 }
 .login_form1{
     padding: 10px;
@@ -43,6 +49,8 @@ main{
     padding: 10px;
     border-radius: 5px;
     margin: 10px;
+    background-color: blue;
+    color: white;
 }
 footer{
     height: 50px;
@@ -52,4 +60,10 @@ footer{
 }
 .copyw{
     padding: 10px;
+}
+
+.img1{
+    width: 1520px;
+    height: 612px;
+    opacity: 0.55;
 }
