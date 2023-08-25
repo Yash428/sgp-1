@@ -59,8 +59,35 @@ html, body {
         margin-left: 0px;
         padding: 15px;
 }
-
-
+a{
+    text-decoration: none;
+    color:black;
+}
+.nav_list:hover{
+    color: white;
+}
+.ic{
+    padding: 2px;
+    padding-top: 10px;
+}
+.to-green{
+    color:green;
+}
+.to-yellow{
+    color:yellow
+}
+.to-purple{
+    color:purple
+}
+.to-orrange{
+    color: orange;
+}
+.to-darkred{
+    color:rgb(149, 0, 0)
+}
+.to-lightgreen{
+    color: lightgreen;
+}
 ul.left_side_nav{
     /* float: left; */
     width: 30%;
@@ -91,7 +118,7 @@ li.nav_list:hover{
 }
 li.left_side{
     padding: 10px;
-    width: 150px;
+    width: 180px;
     
 }
 .right{
@@ -125,6 +152,11 @@ ul.right_side_box{
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 5px 5px gray ;
+}
+.right_side:hover{
+    transform: scale(1.2);
+    /* margin-right: 40px;
+    margin-left: 26px; */
 }
 #right_box_1{
     /* background-color: rgb(163, 163, 0); */
