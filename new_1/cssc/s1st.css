@@ -183,12 +183,13 @@ ul.right_side_box{
     color: #fe0606;
     text-decoration: none;
     font-size: 30px;
+    padding: 10px;
 }
 .content1 {
     position: absolute;
     background: white;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     padding: 1em 2em;
     border-radius: 4px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.784);
@@ -208,6 +209,10 @@ ul.right_side_box{
     align-items: center;
     justify-content: center;
     box-shadow: 5px 5px 5px 5px gray ;
+}
+.box-heading{
+    text-align: center;
+    padding: 10px;
 }
 .right_side:hover{
     transform: scale(1.2);
