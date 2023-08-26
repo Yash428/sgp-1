@@ -115,6 +115,7 @@ li.nav_list:hover{
 .left_side_nav{
     margin: 0%;
     height: 572px;
+    
 }
 li.left_side{
     padding: 10px;
@@ -212,6 +213,11 @@ ul.right_side_box{
     transform: scale(1.2);
     /* margin-right: 40px;
     margin-left: 26px; */
+}
+li.left_side:hover{
+    transform: scale(1.1);
+    border-color: white;
+    box-shadow: 2px 2px 2px 2px rgba(228, 228, 228, 0.926);
 }
 #right_box_1{
     /* background-color: rgb(163, 163, 0); */
