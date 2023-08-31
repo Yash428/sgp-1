@@ -1,21 +1,29 @@
+.st-table{
+    height: 150px;
+    overflow: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    width:500px;
+}
+
 tr:nth-child(even){
     background-color: rgb(222, 247, 255);
 }
 tr:hover{
     background-color:  rgb(222, 247, 255);;
 }
-
+tr{
+    height: 40px;
+    padding: 5px;
+}
 th{
     background-color: rgb(36, 36, 255);
     color: white;
 }
-
-table{
-    border: 1px black solid;
-    border-collapse: collapse;
-    width:500px;
-    height:300px;
-    text-align: center;
+thead tr th{
+    position: sticky;
+    height: 30px;
 }
 
 .fill-button{
@@ -27,8 +35,29 @@ table{
     display: flex;
     justify-content: center;
     border-radius: 5px;
+    
 }
 
 .student-details{
-    border: 1px solid;
+    background-color: rgb(214, 239, 249);
+    padding: 3px;
+    margin: 2px;
+    border: 1px solid black;
+    border-radius: 5px ;
+    width:200px;
+}
+.student-details-type{
+    float: left;
+    width:30%;
+    padding:3px;
+}
+thead, tbody, tr{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+}
+tbody {
+    display:block;
+    max-height:280px;
+    overflow-y:scroll;
 }

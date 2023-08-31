@@ -48,7 +48,7 @@
                 <div class="content1">
                     <h2 class="box-heading">Time Table</h2>
                     <a href="#" class="tt-close-box">X</a>
-                    <table>
+                    <table class="st-table">
                         <tr>
                             <th>Time</th>
                             <th>Class</th>
@@ -76,12 +76,17 @@
                 <div class="content1">
                     <h2 class="box-heading">Attendance</h2>
                     <a href="#" class="tt-close-box">X</a>
-                    <table>
+                    <table class="st-table">
+                        <thead>
+
+                    
                         <tr>
                             <th>Time</th>
                             <th>Class</th>
                             <th>Attendance</th>
                         </tr>
+                    </thead>
+                    <tbody>
                         <tr>
                             <td>9:10-10:10</td>
                             <td>11-A</td>
@@ -103,6 +108,7 @@
                                 <a href="" class="fill-button">fill</a>
                             </td>
                         </tr>
+                    </tbody>
                     </table>
                 </div>
             </div>
@@ -112,14 +118,14 @@
                     <a href="#" class="tt-close-box">X</a>
                 </div>
             </div>
-            <div class="tt-content" id="calendar">
+            <!-- <div class="tt-content" id="calendar">
                 <div class="content1">
                     <h2 class="box-heading">Calendar</h2>
                     <a href="#" class="tt-close-box">X</a>
                     <object data="../pdf files/01. 3rd, 5th, 7th Sem_ODD SEM B Tech Academic Calendar 2023-24 (June - Nov)_updated_25-04-2023.pdf" type="application/pdf" width="100%" height="350px"></object>
                     <a href="../pdf files/01. 3rd, 5th, 7th Sem_ODD SEM B Tech Academic Calendar 2023-24 (June - Nov)_updated_25-04-2023.pdf"></a>
                 </div>
-            </div>
+            </div> -->
             <div class="tt-content" id="notifications">
                 <div class="content1">
                     <h2 class="box-heading">Notifications</h2>
@@ -127,14 +133,52 @@
                 </div>
             </div>
             <div class="tt-content" id="student-details">
-                <div class="content1">
+                <div class="content1" style="height:420px;">
                     <h2 class="box-heading">Student details</h2>
                     <a href="#" class="tt-close-box">X</a>
-                    <table>
+                    <table class="st-table" id="table1">
+                        <thead>
+                            <tr>
+                                <th>Roll No.</th>
+                                <th>Name</th>
+                                <th>More</th>
+                            </tr>
+                        </thead>
+                        <tbody id="st-dt-body">
                         <tr>
-                            <th>Roll No.</th>
-                            <th>Name</th>
-                            <th>More</th>
+                            <td>1</td>
+                            <td>Ayush</td>
+                            <td>
+                                <a href="#studet" class="fill-button">more</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Devin</td>
+                            <td>
+                                <a href="#studet" class="fill-button">more</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Dev</td>
+                            <td>
+                                <a href="#studet" class="fill-button">more</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Siddharth</td>
+                            <td>
+                                <a href="#studet" class="fill-button">more</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Nir</td>
+                            <td>
+                                <a href="#studet" class="fill-button">more</a>
+                            </td>
                         </tr>
                         <tr>
                             <td>1</td>
@@ -171,10 +215,27 @@
                                 <a href="#studet" class="fill-button">more</a>
                             </td>
                         </tr>
+                    </tbody>
                     </table>
-                    <a href="#" class="fill-button">more</a>
+                    <a href="#" class="fill-button" style="margin-top: 20px;">more</a>
                 </div>
             </div>
+            <!-- <script >
+                let parent = document.getElementById("st-dt-body");
+                const len = 3;
+                function addChild(n,name)
+                {
+                    let d1 = document.createElement('tr');
+                    d1.id="S230"+n;
+                    d1.innerHTML="<td>"+n+"</td><td>"+name+ "</td><td><a href=\"#studet\" class=\"fill-button\">more</a></td>";
+                    parent.appendChild(d1);
+                }
+                let namelist= ['yash','shivam','kartik'];
+                for(let i=0;i<len;i++)
+                {
+                    addChild(i+1,namelist[i]);
+                }
+            </script> -->
             <div class="tt-content" id="more">
                 <div class="content1">
                     <h2 class="box-heading">More</h2>
@@ -183,21 +244,25 @@
             </div>
             <div class="tt-content" id="studet">
                 <div class="content1">
+                    <a href="#student-details" class="tt-close-box-1">back</a>
                     <h2 class="box-heading">Student-details</h2>
                     <a href="#" class="tt-close-box">X</a>
                     <div class="stdet">
-                        Name: <span class="student-details" id="STudent-Name">Ayush</span><br>
-                        Id no: 1 <br>
-                        Class: 11-A <br>
-                        Address: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, molestiae. <br>
-                        Mobile no: 123456789 <br>
-                        Email: ayush123@gmail.com <br>
-                        Date of Birth: 20/10/2005<br>
-                        Father's Name: Suresh <br>
-                        Mother's Name: Mina <br>
-                        Parent's Mobile No. : 1234567891 <br>
+                        <span class="student-details-type">Name: </span><input class="student-details"  id="Student-Name" value="Ayush Patel" readonly="readonly"></input><br>
+                        <span class="student-details-type">Id no:</span><input class="student-details"  id="Student-Id" value="1" readonly="readonly"></input><br>
+                        <span class="student-details-type">Class: </span><input class="student-details" type="text" readonly="readonly" value="11-A"> <br>
+                        <span class="student-details-type">Address: </span><textarea style="width:300px"   class="student-details" cols="45" rows="4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, molestiae. </textarea> <br>
+                        <span class="student-details-type">Mobile no: </span><input class="student-details" type="text" value="1234567890" readonly="readonly"><br>
+                        <span class="student-details-type">Email: </span><input class="student-details" type="email" value="ayush123@gmail.com" readonly="readonly"><br>
+                        <span class="student-details-type">Date of Birth: </span><input class="student-details" type="text" value="20/10/2005" readonly="readonly"><br>
+                        <span class="student-details-type">Father's Name: </span><input class="student-details" type="text" value="Suresh Patel" readonly="readonly"><br>
+                        <span class="student-details-type">Mother's Name: </span><input class="student-details" type="text" value="Patel Reshmaben Chetankumar" readonly="readonly"> <br>
+                        <span class="student-details-type">Parent's Mobile No. : </span><input class="student-details" type="text" value="1234567891" readonly="readonly"><br>
                     </div>
                 </div>
+            </div>
+            <div class="fill-attendance">
+                
             </div>
         </div>
     </main>

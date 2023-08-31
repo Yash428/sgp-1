@@ -185,6 +185,16 @@ ul.right_side_box{
     font-size: 30px;
     padding: 10px;
 }
+.tt-close-box-1{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #189100;
+    padding: 10px;
+    border-radius: 10px;
+}
 .content1 {
     position: absolute;
     background: white;
